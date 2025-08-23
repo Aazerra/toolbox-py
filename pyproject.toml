@@ -1,27 +1,49 @@
 [project]
-name = "toolbox"
+name = "toolbox-py"
 version = "0.1.0"
-description = "Bunch of utilites in Python"
+description = "A collection of Python utilities for common programming tasks"
 authors = [
-    {name = "Alireza Rabie",email = "alireza@aazerra.dev"}
+    {name = "Alireza Rabie", email = "alireza@aazerra.dev"}
 ]
 license = {text = "MIT"}
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.10"
+keywords = ["utilities", "tools", "string", "dict", "list", "encoding", "json"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities"
+]
 
-[tool.poetry.dependencies]
+[project.urls]
+Homepage = "https://github.com/Aazerra/toolbox-py"
+Repository = "https://github.com/Aazerra/toolbox-py"
+Documentation = "https://github.com/Aazerra/toolbox-py"
+"Bug Reports" = "https://github.com/Aazerra/toolbox-py/issues"
 
-[tool.poetry.group.dev.dependencies]
-pytest = "^8.0.0"
-black = "^24.0.0"
-isort = "^5.12.0"
-mypy = "^1.0.0"
-sphinx = "^8.2.3"
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "black>=24.0.0",
+    "isort>=5.12.0",
+    "mypy>=1.0.0",
+    "sphinx>=8.2.3"
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["toolbox"]
 
 
 [build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
 [tool.black]
 line-length = 88
