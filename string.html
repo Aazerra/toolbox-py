@@ -60,6 +60,18 @@
 </dd></dl>
 
 <dl class="py function">
+<dt class="sig sig-object py" id="toolbox.string.count_words">
+<span class="sig-prename descclassname"><span class="pre">toolbox.string.</span></span><span class="sig-name descname"><span class="pre">count_words</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#toolbox.string.count_words" title="Link to this definition">¶</a></dt>
+<dd><p>Count words in a string.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>text (str): The input string.</p>
+</dd>
+<dt>Returns:</dt><dd><p>int: Number of words.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
 <dt class="sig sig-object py" id="toolbox.string.decompress_string">
 <span class="sig-prename descclassname"><span class="pre">toolbox.string.</span></span><span class="sig-name descname"><span class="pre">decompress_string</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#toolbox.string.decompress_string" title="Link to this definition">¶</a></dt>
 <dd><p>Decode a base64-encoded string and decompress it using zlib.</p>
@@ -67,6 +79,42 @@
 <dt>Args:</dt><dd><p>text (str): The base64-encoded compressed string.</p>
 </dd>
 <dt>Returns:</dt><dd><p>str: The decompressed UTF-8 string.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="toolbox.string.kebab_case">
+<span class="sig-prename descclassname"><span class="pre">toolbox.string.</span></span><span class="sig-name descname"><span class="pre">kebab_case</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#toolbox.string.kebab_case" title="Link to this definition">¶</a></dt>
+<dd><p>Convert a string to kebab-case.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>text (str): The input string (snake_case, camelCase, or spaces).</p>
+</dd>
+<dt>Returns:</dt><dd><p>str: The kebab-case representation.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="toolbox.string.remove_accents">
+<span class="sig-prename descclassname"><span class="pre">toolbox.string.</span></span><span class="sig-name descname"><span class="pre">remove_accents</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#toolbox.string.remove_accents" title="Link to this definition">¶</a></dt>
+<dd><p>Remove accents and diacritics from a string.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>text (str): The input string.</p>
+</dd>
+<dt>Returns:</dt><dd><p>str: String with accents removed.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="toolbox.string.reverse_string">
+<span class="sig-prename descclassname"><span class="pre">toolbox.string.</span></span><span class="sig-name descname"><span class="pre">reverse_string</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#toolbox.string.reverse_string" title="Link to this definition">¶</a></dt>
+<dd><p>Reverse a string.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>text (str): The input string.</p>
+</dd>
+<dt>Returns:</dt><dd><p>str: The reversed string.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -91,6 +139,57 @@
 <dt>Args:</dt><dd><p>name (str): The snake_case string.</p>
 </dd>
 <dt>Returns:</dt><dd><p>str: The CamelCase representation.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="toolbox.string.strip_html">
+<span class="sig-prename descclassname"><span class="pre">toolbox.string.</span></span><span class="sig-name descname"><span class="pre">strip_html</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#toolbox.string.strip_html" title="Link to this definition">¶</a></dt>
+<dd><p>Remove HTML tags from a string.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>text (str): The input string with HTML.</p>
+</dd>
+<dt>Returns:</dt><dd><p>str: String with HTML tags removed.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="toolbox.string.title_case">
+<span class="sig-prename descclassname"><span class="pre">toolbox.string.</span></span><span class="sig-name descname"><span class="pre">title_case</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#toolbox.string.title_case" title="Link to this definition">¶</a></dt>
+<dd><p>Convert a string to title case, handling special words correctly.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>text (str): The input string.</p>
+</dd>
+<dt>Returns:</dt><dd><p>str: Title-cased string.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="toolbox.string.truncate">
+<span class="sig-prename descclassname"><span class="pre">toolbox.string.</span></span><span class="sig-name descname"><span class="pre">truncate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">suffix</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'...'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#toolbox.string.truncate" title="Link to this definition">¶</a></dt>
+<dd><p>Truncate a string to a maximum length, adding a suffix if truncated.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>text (str): The text to truncate.
+length (int): Maximum length (including suffix).
+suffix (str, optional): Suffix to add if truncated. Defaults to ‘…’.</p>
+</dd>
+<dt>Returns:</dt><dd><p>str: The truncated string.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="toolbox.string.wrap_text">
+<span class="sig-prename descclassname"><span class="pre">toolbox.string.</span></span><span class="sig-name descname"><span class="pre">wrap_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#toolbox.string.wrap_text" title="Link to this definition">¶</a></dt>
+<dd><p>Wrap text to a specific width.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>text (str): The text to wrap.
+width (int): Maximum line width.</p>
+</dd>
+<dt>Returns:</dt><dd><p>List[str]: List of wrapped lines.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -130,9 +229,17 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">string module</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#toolbox.string.camel_to_snake"><code class="docutils literal notranslate"><span class="pre">camel_to_snake()</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="#toolbox.string.compress_string"><code class="docutils literal notranslate"><span class="pre">compress_string()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#toolbox.string.count_words"><code class="docutils literal notranslate"><span class="pre">count_words()</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="#toolbox.string.decompress_string"><code class="docutils literal notranslate"><span class="pre">decompress_string()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#toolbox.string.kebab_case"><code class="docutils literal notranslate"><span class="pre">kebab_case()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#toolbox.string.remove_accents"><code class="docutils literal notranslate"><span class="pre">remove_accents()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#toolbox.string.reverse_string"><code class="docutils literal notranslate"><span class="pre">reverse_string()</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="#toolbox.string.slugify"><code class="docutils literal notranslate"><span class="pre">slugify()</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="#toolbox.string.snake_to_camel"><code class="docutils literal notranslate"><span class="pre">snake_to_camel()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#toolbox.string.strip_html"><code class="docutils literal notranslate"><span class="pre">strip_html()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#toolbox.string.title_case"><code class="docutils literal notranslate"><span class="pre">title_case()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#toolbox.string.truncate"><code class="docutils literal notranslate"><span class="pre">truncate()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#toolbox.string.wrap_text"><code class="docutils literal notranslate"><span class="pre">wrap_text()</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="dict.html">dict module</a></li>

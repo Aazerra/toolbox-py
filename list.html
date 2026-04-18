@@ -36,6 +36,44 @@
   <section id="module-toolbox.list">
 <span id="list-module"></span><h1>list module<a class="headerlink" href="#module-toolbox.list" title="Link to this heading">¶</a></h1>
 <dl class="py function">
+<dt class="sig sig-object py" id="toolbox.list.chunk_list">
+<span class="sig-prename descclassname"><span class="pre">toolbox.list.</span></span><span class="sig-name descname"><span class="pre">chunk_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lst</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#toolbox.list.chunk_list" title="Link to this definition">¶</a></dt>
+<dd><p>Split a list into chunks of a specified size.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>lst (List[T]): The list to chunk.
+size (int): Size of each chunk.</p>
+</dd>
+<dt>Returns:</dt><dd><p>List[List[T]]: List of chunks.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="toolbox.list.compact">
+<span class="sig-prename descclassname"><span class="pre">toolbox.list.</span></span><span class="sig-name descname"><span class="pre">compact</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lst</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#toolbox.list.compact" title="Link to this definition">¶</a></dt>
+<dd><p>Remove None, empty strings, and False values from a list.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>lst (List[Any]): The list to compact.</p>
+</dd>
+<dt>Returns:</dt><dd><p>List[Any]: List with falsy values removed.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="toolbox.list.dedupe">
+<span class="sig-prename descclassname"><span class="pre">toolbox.list.</span></span><span class="sig-name descname"><span class="pre">dedupe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lst</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#toolbox.list.dedupe" title="Link to this definition">¶</a></dt>
+<dd><p>Remove duplicates from a list based on a key function.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>lst (List[T]): The list to deduplicate.
+key (Callable[[T], Any], optional): Function to extract comparison key. Defaults to None (use item itself).</p>
+</dd>
+<dt>Returns:</dt><dd><p>List[T]: List with duplicates removed, order preserved.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
 <dt class="sig sig-object py" id="toolbox.list.flatten_list">
 <span class="sig-prename descclassname"><span class="pre">toolbox.list.</span></span><span class="sig-name descname"><span class="pre">flatten_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lst</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#toolbox.list.flatten_list" title="Link to this definition">¶</a></dt>
 <dd><p>Recursively flatten a list of arbitrarily nested lists.</p>
@@ -43,6 +81,56 @@
 <dt>Args:</dt><dd><p>lst (List[Any]): The nested list.</p>
 </dd>
 <dt>Returns:</dt><dd><p>List[Any]: A single flattened list.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="toolbox.list.group_by">
+<span class="sig-prename descclassname"><span class="pre">toolbox.list.</span></span><span class="sig-name descname"><span class="pre">group_by</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lst</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#toolbox.list.group_by" title="Link to this definition">¶</a></dt>
+<dd><p>Group list items by a key function.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>lst (List[T]): The list to group.
+key (Callable[[T], Any]): Function that returns the grouping key.</p>
+</dd>
+<dt>Returns:</dt><dd><p>Dict[Any, List[T]]: Dictionary mapping keys to lists of items.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="toolbox.list.interleave">
+<span class="sig-prename descclassname"><span class="pre">toolbox.list.</span></span><span class="sig-name descname"><span class="pre">interleave</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">lists</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#toolbox.list.interleave" title="Link to this definition">¶</a></dt>
+<dd><p>Interleave multiple lists element by element.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p><a href="#id1"><span class="problematic" id="id2">*</span></a>lists: Variable number of lists to interleave.</p>
+</dd>
+<dt>Returns:</dt><dd><p>List[T]: Interleaved list.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="toolbox.list.partition">
+<span class="sig-prename descclassname"><span class="pre">toolbox.list.</span></span><span class="sig-name descname"><span class="pre">partition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lst</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">predicate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#toolbox.list.partition" title="Link to this definition">¶</a></dt>
+<dd><p>Partition a list into two lists based on a predicate.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>lst (List[T]): The list to partition.
+predicate (Callable[[T], bool]): Function that returns True or False.</p>
+</dd>
+<dt>Returns:</dt><dd><p>tuple[List[T], List[T]]: Tuple of (matching, non-matching) items.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="toolbox.list.unique">
+<span class="sig-prename descclassname"><span class="pre">toolbox.list.</span></span><span class="sig-name descname"><span class="pre">unique</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lst</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#toolbox.list.unique" title="Link to this definition">¶</a></dt>
+<dd><p>Return unique elements from a list while preserving order.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>lst (List[T]): The input list.</p>
+</dd>
+<dt>Returns:</dt><dd><p>List[T]: List with duplicates removed, order preserved.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -79,7 +167,14 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="dataclass.html">dataclass module</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">list module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#toolbox.list.chunk_list"><code class="docutils literal notranslate"><span class="pre">chunk_list()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#toolbox.list.compact"><code class="docutils literal notranslate"><span class="pre">compact()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#toolbox.list.dedupe"><code class="docutils literal notranslate"><span class="pre">dedupe()</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="#toolbox.list.flatten_list"><code class="docutils literal notranslate"><span class="pre">flatten_list()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#toolbox.list.group_by"><code class="docutils literal notranslate"><span class="pre">group_by()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#toolbox.list.interleave"><code class="docutils literal notranslate"><span class="pre">interleave()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#toolbox.list.partition"><code class="docutils literal notranslate"><span class="pre">partition()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#toolbox.list.unique"><code class="docutils literal notranslate"><span class="pre">unique()</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="string.html">string module</a></li>

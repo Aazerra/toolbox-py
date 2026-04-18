@@ -48,6 +48,31 @@ print(d.a)  # 1</p>
 </dd></dl>
 
 <dl class="py function">
+<dt class="sig sig-object py" id="toolbox.dict.deep_copy_dict">
+<span class="sig-prename descclassname"><span class="pre">toolbox.dict.</span></span><span class="sig-name descname"><span class="pre">deep_copy_dict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">d</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#toolbox.dict.deep_copy_dict" title="Link to this definition">¶</a></dt>
+<dd><p>Create a deep copy of a nested dictionary.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>d (Dict[Any, Any]): The dictionary to copy.</p>
+</dd>
+<dt>Returns:</dt><dd><p>Dict[Any, Any]: A deep copy of the dictionary.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="toolbox.dict.filter_dict">
+<span class="sig-prename descclassname"><span class="pre">toolbox.dict.</span></span><span class="sig-name descname"><span class="pre">filter_dict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">d</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">predicate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">callable</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#toolbox.dict.filter_dict" title="Link to this definition">¶</a></dt>
+<dd><p>Filter a dictionary based on a predicate function.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>d (Dict[Any, Any]): The dictionary to filter.
+predicate (callable): Function that takes (key, value) and returns bool.</p>
+</dd>
+<dt>Returns:</dt><dd><p>Dict[Any, Any]: Filtered dictionary.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
 <dt class="sig sig-object py" id="toolbox.dict.flatten_dict">
 <span class="sig-prename descclassname"><span class="pre">toolbox.dict.</span></span><span class="sig-name descname"><span class="pre">flatten_dict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">d</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parent_key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sep</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'.'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#toolbox.dict.flatten_dict" title="Link to this definition">¶</a></dt>
 <dd><p>Flatten a nested dictionary, joining keys with a separator.</p>
@@ -62,6 +87,33 @@ sep (str, optional): Separator between keys. Defaults to ‘.’.</p>
 </dd></dl>
 
 <dl class="py function">
+<dt class="sig sig-object py" id="toolbox.dict.get_nested">
+<span class="sig-prename descclassname"><span class="pre">toolbox.dict.</span></span><span class="sig-name descname"><span class="pre">get_nested</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">d</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sep</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'.'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="headerlink" href="#toolbox.dict.get_nested" title="Link to this definition">¶</a></dt>
+<dd><p>Get a value from a nested dictionary using a dotted path.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>d (Dict[Any, Any]): The nested dictionary.
+path (str): The dotted path to the value (e.g., ‘a.b.c’).
+default (Any, optional): Default value if path not found. Defaults to None.
+sep (str, optional): Path separator. Defaults to ‘.’.</p>
+</dd>
+<dt>Returns:</dt><dd><p>Any: The value at the path or the default.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="toolbox.dict.invert_dict">
+<span class="sig-prename descclassname"><span class="pre">toolbox.dict.</span></span><span class="sig-name descname"><span class="pre">invert_dict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">d</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#toolbox.dict.invert_dict" title="Link to this definition">¶</a></dt>
+<dd><p>Invert a dictionary (swap keys and values).</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>d (Dict[Any, Any]): The dictionary to invert.</p>
+</dd>
+<dt>Returns:</dt><dd><p>Dict[Any, Any]: Inverted dictionary with values as keys.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
 <dt class="sig sig-object py" id="toolbox.dict.merge_dicts">
 <span class="sig-prename descclassname"><span class="pre">toolbox.dict.</span></span><span class="sig-name descname"><span class="pre">merge_dicts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dict1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dict2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#toolbox.dict.merge_dicts" title="Link to this definition">¶</a></dt>
 <dd><p>Recursively merge two dictionaries.</p>
@@ -70,6 +122,32 @@ sep (str, optional): Separator between keys. Defaults to ‘.’.</p>
 dict2 (Dict[Any, Any]): The dictionary to merge into the base.</p>
 </dd>
 <dt>Returns:</dt><dd><p>Dict[Any, Any]: The merged dictionary.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="toolbox.dict.set_nested">
+<span class="sig-prename descclassname"><span class="pre">toolbox.dict.</span></span><span class="sig-name descname"><span class="pre">set_nested</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">d</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sep</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'.'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#toolbox.dict.set_nested" title="Link to this definition">¶</a></dt>
+<dd><p>Set a value in a nested dictionary using a dotted path.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>d (Dict[Any, Any]): The nested dictionary to modify.
+path (str): The dotted path to set (e.g., ‘a.b.c’).
+value (Any): The value to set.
+sep (str, optional): Path separator. Defaults to ‘.’.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="toolbox.dict.unflatten_dict">
+<span class="sig-prename descclassname"><span class="pre">toolbox.dict.</span></span><span class="sig-name descname"><span class="pre">unflatten_dict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">d</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sep</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'.'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#toolbox.dict.unflatten_dict" title="Link to this definition">¶</a></dt>
+<dd><p>Unflatten a dictionary with joined keys back into a nested structure.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>d (Dict[str, Any]): The flattened dictionary.
+sep (str, optional): Separator used in keys. Defaults to ‘.’.</p>
+</dd>
+<dt>Returns:</dt><dd><p>Dict[Any, Any]: A nested dictionary.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -109,8 +187,14 @@ dict2 (Dict[Any, Any]): The dictionary to merge into the base.</p>
 <li class="toctree-l1"><a class="reference internal" href="string.html">string module</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">dict module</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#toolbox.dict.DotDict"><code class="docutils literal notranslate"><span class="pre">DotDict</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#toolbox.dict.deep_copy_dict"><code class="docutils literal notranslate"><span class="pre">deep_copy_dict()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#toolbox.dict.filter_dict"><code class="docutils literal notranslate"><span class="pre">filter_dict()</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="#toolbox.dict.flatten_dict"><code class="docutils literal notranslate"><span class="pre">flatten_dict()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#toolbox.dict.get_nested"><code class="docutils literal notranslate"><span class="pre">get_nested()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#toolbox.dict.invert_dict"><code class="docutils literal notranslate"><span class="pre">invert_dict()</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="#toolbox.dict.merge_dicts"><code class="docutils literal notranslate"><span class="pre">merge_dicts()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#toolbox.dict.set_nested"><code class="docutils literal notranslate"><span class="pre">set_nested()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#toolbox.dict.unflatten_dict"><code class="docutils literal notranslate"><span class="pre">unflatten_dict()</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="encode.html">encode module</a></li>
