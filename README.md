@@ -5,6 +5,7 @@ A comprehensive collection of Python utilities for everyday programming tasks.
 ## Features
 
 ### Dictionary Utilities (`toolbox.dict`)
+
 - **DotDict**: Dictionary with dot notation access
 - **flatten_dict**: Flatten nested dictionaries with customizable separators
 - **unflatten_dict**: Convert flattened dicts back to nested structure
@@ -15,6 +16,7 @@ A comprehensive collection of Python utilities for everyday programming tasks.
 - **deep_copy_dict**: Deep copy nested dictionaries
 
 ### List Utilities (`toolbox.list`)
+
 - **flatten_list**: Recursively flatten nested lists
 - **chunk_list**: Split lists into fixed-size chunks
 - **unique**: Remove duplicates while preserving order
@@ -25,16 +27,19 @@ A comprehensive collection of Python utilities for everyday programming tasks.
 - **compact**: Remove falsy values (None, '', False, etc.)
 
 ### String Utilities (`toolbox.string`)
+
 - **Case conversion**: camel_to_snake, snake_to_camel, kebab_case, title_case
 - **Compression**: compress_string/decompress_string with base64 encoding
 - **Formatting**: slugify, truncate, wrap_text
 - **Text processing**: remove_accents, strip_html, reverse_string, count_words
 
 ### Encoding/Decoding (`toolbox.encode`, `toolbox.decode`)
+
 - Base64 encoding and decoding
 - Support for both str and bytes
 
 ### Data Serialization (`toolbox.dataclass`)
+
 - **SerializableDataclass**: Enhanced dataclass with JSON serialization
 - Alias support for field name mapping
 - Preprocessors for data transformation
@@ -47,6 +52,7 @@ pip install toolbox-py
 ```
 
 Or with uv:
+
 ```bash
 uv add toolbox-py
 ```

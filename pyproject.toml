@@ -31,10 +31,10 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/alireza/toolbox-py"
-Repository = "https://github.com/alireza/toolbox-py"
-Documentation = "https://toolbox-py.readthedocs.io"
-Issues = "https://github.com/alireza/toolbox-py/issues"
+Homepage = "https://github.com/aazerra/toolbox-py"
+Repository = "https://github.com/aazerra/toolbox-py"
+Documentation = "https://aazerra.github.io/toolbox-py/"
+Issues = "https://github.com/aazerra/toolbox-py/issues"
 
 [dependency-groups]
 dev = [
