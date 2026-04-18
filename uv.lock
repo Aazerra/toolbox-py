@@ -447,7 +447,7 @@ wheels = [
 ]
 
 [[package]]
-name = "toolbox-py"
+name = "toolbox"
 version = "0.1.0"
 source = { editable = "." }
 
